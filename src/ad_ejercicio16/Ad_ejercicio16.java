@@ -32,7 +32,7 @@ public class Ad_ejercicio16 {
     
     public static void main(String[] args) {
         conectar();
-        leer(ruta);
+        leerYCrearXML(ruta);
         
     }
     
@@ -47,7 +47,7 @@ public class Ad_ejercicio16 {
         }
     }
 
-    public static void leer(String ruta) {
+    public static void leerYCrearXML(String ruta) {
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ruta));
             //La clase Product tiene que estar guardada en un paquete con el mismo nombre 
